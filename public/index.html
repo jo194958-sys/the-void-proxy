@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyNest — Online Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Ultraviolet files (served from root) -->
+    <script src="/uv.config.js"></script>
+    <script src="/uv.bundle.js"></script>
+</head>
+<body>
+
+<!-- ======================== ANIMALS (TOP) ======================== -->
+<div class="animals-bar">
+    <!-- Kiwi Bird SVG -->
+    <svg class="kiwi-svg" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="115" rx="55" ry="42" fill="#6b5d4f"/>
+        <ellipse cx="100" cy="100" rx="48" ry="36" fill="#7a6b5a"/>
+        <circle cx="135" cy="95" r="18" fill="#6b5d4f"/>
+        <circle cx="140" cy="92" r="2.5" fill="#1a1a1a"/>
+        <path d="M 148 96 Q 170 100, 178 108 Q 176 110, 168 108" fill="#4a3f35" stroke="#3a2f25" stroke-width="0.5"/>
+        <path d="M 80 130 L 85 150 L 88 150 L 86 130" fill="#4a3f35"/>
+        <path d="M 105 135 L 110 155 L 113 155 L 111 135" fill="#4a3f35"/>
+        <path d="M 115 135 L 120 155 L 123 155 L 121 135" fill="#4a3f35"/>
+        <path d="M 95 130 L 100 150 L 103 150 L 101 130" fill="#4a3f35"/>
+        <ellipse cx="105" cy="140" rx="8" ry="4" fill="#5a4d3f" opacity="0.6"/>
+    </svg>
+
+    <!-- Owl SVG -->
+    <svg class="owl-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="110" rx="50" ry="60" fill="#8b7355"/>
+        <ellipse cx="100" cy="105" rx="44" ry="52" fill="#9b8366"/>
+        <circle cx="75" cy="80" r="22" fill="#8b7355"/>
+        <circle cx="125" cy="80" r="22" fill="#8b7355"/>
+        <circle cx="75" cy="82" r="15" fill="#f4e8d0"/>
+        <circle cx="125" cy="82" r="15" fill="#f4e8d0"/>
+        <circle cx="77" cy="84" r="8" fill="#1a1a1a"/>
+        <circle cx="123" cy="84" r="8" fill="#1a1a1a"/>
+        <circle cx="79" cy="82" r="2.5" fill="#fff"/>
+        <circle cx="125" cy="82" r="2.5" fill="#fff"/>
+        <path d="M 92 95 L 100 108 L 108 95 Z" fill="#d4a76a"/>
+        <path d="M 80 72 Q 60 62, 50 72 Q 60 68, 80 75 Z" fill="#6b5d4f"/>
+        <path d="M 120 72 Q 140 62, 150 72 Q 140 68, 120 75 Z" fill="#6b5d4f"/>
+        <ellipse cx="100" cy="140" rx="12" ry="8" fill="#6b5d4f" opacity="0.4"/>
+        <path d="M 75 160 L 72 175 L 78 175 Z" fill="#d4a76a"/>
+        <path d="M 125 160 L 122 175 L 128 175 Z" fill="#d4a76a"/>
+        <circle cx="60" cy="50" r="3" fill="#c4602a" opacity="0.3"/>
+        <circle cx="140" cy="55" r="2.5" fill="#c4602a" opacity="0.3"/>
+    </svg>
+</div>
+
+<!-- ======================== STUDY SITE (FAKE) ======================== -->
+<div id="study-site">
+    <header class="study-header">
+        <h1>🍂 StudyNest</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Subjects</a>
+            <a href="#">Resources</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main class="study-main">
+        <h2>Welcome to StudyNest</h2>
+        <p>Your cozy corner for focused learning. Browse subjects, take notes, and track your progress — all in one place.</p>
+
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <div class="subject-icon">📐</div>
+                <h3>Mathematics</h3>
+                <p>Algebra, Geometry, Calculus & more</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">🔬</div>
+                <h3>Science</h3>
+                <p>Biology, Chemistry, Physics</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">📚</div>
+                <h3>History</h3>
+                <p>World & American History</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">✍️</div>
+                <h3>English</h3>
+                <p>Literature, Writing, Grammar</p>
+            </div>
+        </div>
+
+        <div class="calculator-section">
+            <h3>Quick Calculator Tool</h3>
+            <div class="calculator">
+                <div class="calc-display" id="calc-display">0</div>
+                <div class="calc-buttons">
+                    <button class="calc-btn" data-num="1">1</button>
+                    <button class="calc-btn" data-num="2">2</button>
+                    <button class="calc-btn" data-num="3">3</button>
+                    <button class="calc-btn" data-num="4">4</button>
+                    <button class="calc-btn" data-num="5">5</button>
+                    <button class="calc-btn" data-num="6">6</button>
+                    <button class="calc-btn" data-num="7">7</button>
+                    <button class="calc-btn" data-num="8">8</button>
+                    <button class="calc-btn" data-num="9">9</button>
+                    <button class="calc-btn" data-num="0">0</button>
+                    <button class="calc-btn" id="calc-clear">C</button>
+                    <button class="calc-btn" id="calc-eval">✓</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="study-footer">
+        <p>© 2026 StudyNest — A cozy place to learn 🍂</p>
+    </footer>
+</div>
+
+<!-- ======================== VOID PROXY (HIDDEN) ======================== -->
+<div id="void-proxy" style="display:none;">
+    <!-- Panic Button -->
+    <div class="panic-bar">
+        <button id="panic-btn" title="Quickly switch back to StudyNest">🚨 Panic Button</button>
+    </div>
+
+    <!-- Proxy Interface -->
+    <div class="proxy-container">
+        <h1 class="proxy-title">🌑 The Void Proxy</h1>
+        <div class="proxy-search-bar">
+            <input type="text" id="url-input" placeholder="Search or enter URL..." autocomplete="off">
+            <button id="go-btn">Go</button>
+        </div>
+        <div class="proxy-frame-wrap">
+            <iframe id="proxy-frame" src="" style="display:none;"></iframe>
+            <div id="proxy-placeholder" class="proxy-placeholder">
+                <p class="proxy-placeholder-icon">🌑</p>
+                <p>Enter a URL above to start browsing</p>
+                <p class="proxy-loading" id="proxy-status"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================== FALLING LEAVES ======================== -->
+<div class="leaves-container" id="leaves-container"></div>
+
+<!-- Main script (loads proxy transport setup + UI logic) -->
+<script type="module" src="script.js"></script>
+</body>
+</html>

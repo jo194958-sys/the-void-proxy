@@ -1,0 +1,397 @@
+/* ===================== FALL THEME — DARK ===================== */
+:root {
+    --bg-dark: #1a1208;
+    --bg-darker: #0f0a04;
+    --card-bg: #2a1f14;
+    --accent-orange: #c4602a;
+    --accent-amber: #e08a3c;
+    --accent-red: #a63523;
+    --accent-yellow: #d4a544;
+    --text-warm: #e8dcc8;
+    --text-muted: #8a7d6b;
+    --border-warm: #3a2f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: var(--bg-dark);
+    background: linear-gradient(135deg, #1a1208 0%, #0f0a04 100%);
+    color: var(--text-warm);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ===================== ANIMALS BAR ===================== */
+.animals-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 10px 20px 5px;
+    background: linear-gradient(180deg, rgba(26,18,8,0.9) 0%, transparent 100%);
+    position: relative;
+    z-index: 10;
+}
+
+.kiwi-svg {
+    width: 80px;
+    height: 64px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.owl-svg {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+/* ===================== STUDY SITE ===================== */
+#study-site {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px 40px;
+}
+
+.study-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(42, 31, 20, 0.8);
+    border: 1px solid var(--border-warm);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+}
+
+.study-header h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.6rem;
+    color: var(--accent-amber);
+}
+
+.study-header nav a {
+    color: var(--text-warm);
+    margin-left: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.study-header nav a:hover {
+    color: var(--accent-amber);
+}
+
+.study-main {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.study-main h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.8rem;
+    color: var(--accent-amber);
+    margin-bottom: 12px;
+}
+
+.study-main > p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin: 0 auto 35px;
+}
+
+/* ===================== SUBJECT CARDS ===================== */
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.subject-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-warm);
+    border-radius: 12px;
+    padding: 22px 18px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-amber);
+}
+
+.subject-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subject-card h3 {
+    font-size: 1.1rem;
+    color: var(--accent-amber);
+    margin-bottom: 6px;
+}
+
+.subject-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===================== CALCULATOR ===================== */
+.calculator-section {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.calculator-section h3 {
+    font-size: 1.15rem;
+    color: var(--accent-amber);
+    margin-bottom: 14px;
+}
+
+.calculator {
+    background: var(--card-bg);
+    border: 1px solid var(--border-warm);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.calc-display {
+    background: #0a0703;
+    color: var(--accent-amber);
+    font-size: 1.8rem;
+    font-family: 'Quicksand', monospace;
+    text-align: right;
+    padding: 18px 20px;
+    min-height: 60px;
+    border-bottom: 1px solid var(--border-warm);
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border-warm);
+}
+
+.calc-btn {
+    background: var(--card-bg);
+    color: var(--text-warm);
+    border: none;
+    padding: 18px;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.calc-btn:hover {
+    background: #3a2d1d;
+}
+
+.calc-btn:active {
+    background: var(--accent-orange);
+}
+
+#calc-clear {
+    color: var(--accent-red);
+}
+
+#calc-eval {
+    color: var(--accent-amber);
+}
+
+/* ===================== STUDY FOOTER ===================== */
+.study-footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* ===================== VOID PROXY ===================== */
+#void-proxy {
+    min-height: 100vh;
+    padding: 0 20px 30px;
+}
+
+/* Panic Bar */
+.panic-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: linear-gradient(180deg, rgba(15,10,4,0.95) 0%, rgba(15,10,4,0.6) 100%);
+    backdrop-filter: blur(6px);
+}
+
+#panic-btn {
+    background: linear-gradient(135deg, #a63523 0%, #c4602a 100%);
+    color: #fff;
+    border: 1px solid #d4452a;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 12px rgba(166, 53, 35, 0.5);
+}
+
+#panic-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(166, 53, 35, 0.7);
+}
+
+#panic-btn:active {
+    transform: scale(0.98);
+}
+
+/* Proxy Container */
+.proxy-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.proxy-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.8rem;
+    color: var(--accent-amber);
+    text-align: center;
+    margin: 20px 0 18px;
+}
+
+.proxy-search-bar {
+    display: flex;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#url-input {
+    flex: 1;
+    background: var(--card-bg);
+    border: 1px solid var(--border-warm);
+    border-radius: 10px;
+    padding: 14px 20px;
+    color: var(--text-warm);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#url-input::placeholder {
+    color: var(--text-muted);
+}
+
+#url-input:focus {
+    border-color: var(--accent-amber);
+}
+
+#go-btn {
+    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-amber) 100%);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#go-btn:hover {
+    box-shadow: 0 2px 12px rgba(196, 96, 42, 0.5);
+}
+
+/* Proxy Frame — BIG */
+.proxy-frame-wrap {
+    width: 100%;
+    height: 75vh;
+    background: var(--bg-darker);
+    border: 1px solid var(--border-warm);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+}
+
+#proxy-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.proxy-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-muted);
+}
+
+.proxy-placeholder-icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+/* ===================== FALLING LEAVES ===================== */
+.leaves-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.leaf {
+    position: absolute;
+    opacity: 0.6;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 600px) {
+    .animals-bar { gap: 40px; }
+    .study-header { flex-direction: column; gap: 10px; }
+    .study-header nav a { margin: 0 10px; }
+    .proxy-search-bar { flex-direction: column; }
+    .proxy-frame-wrap { height: 65vh; }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "the-void-proxy",
+  "version": "1.0.0",
+  "description": "🍂 The Void Proxy — Fall-themed study site with hidden Ultraviolet proxy (Wisp + Epoxy)",
+  "main": "src/lib/index.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/lib/index.cjs"
+  },
+  "dependencies": {
+    "@mercuryworkshop/bare-mux": "^2.1.9",
+    "@mercuryworkshop/epoxy-transport": "^3.0.1",
+    "@titaniumnetwork-dev/ultraviolet": "https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v3.2.10-headers/titaniumnetwork-dev-ultraviolet-3.2.10-headers.tgz",
+    "express": "^4.18.2",
+    "mrrowisp": "^3.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
